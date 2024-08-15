@@ -13,8 +13,5 @@ selenium_driver = SeleniumDriver(headless=False)
 world_model = WorldModel(mm_llm=mm_llm)
 action_engine = ActionEngine(selenium_driver)
 agent = WebAgent(world_model, action_engine)
-agent.get("https://huggingface.co/docs")
-agent.run("Go on the quicktour of PEFT")
-
-# Launch Gradio Agent Demo
-agent.demo("Go on the quicktour of PEFT")
+agent.get("https://chandlerroth.com")
+agent.run("Extract all links from the page")
